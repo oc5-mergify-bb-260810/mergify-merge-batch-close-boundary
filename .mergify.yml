@@ -1,0 +1,8 @@
+queue_rules:
+  - name: default
+    queue_conditions: []
+    merge_conditions:
+      - check-success = BB_MERGE_BATCH_GATE_20260810_C781
+    batch_size: 2
+    merge_method: merge-batch
+    checks_timeout: 5 minutes
